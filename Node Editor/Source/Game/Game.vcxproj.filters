@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Precompiled">
+      <UniqueIdentifier>{b07bafa4-d21c-4674-8f50-96a0b05e15ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{82f3a099-af22-477e-9986-2473bd725324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes">
+      <UniqueIdentifier>{89b6c6d4-c649-44e9-abe7-1d4189973261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui\blueprints">
+      <UniqueIdentifier>{604f742e-0570-47b8-9e84-f9703a35934b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphManager">
+      <UniqueIdentifier>{367900f8-2dc6-4603-829c-2046cae36c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary">
+      <UniqueIdentifier>{43eab7d8-6b54-405f-8aa1-a10efc4771ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary\BaseType">
+      <UniqueIdentifier>{5f9b8a6d-e084-41f5-b042-4f2cac52bd07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary\Math">
+      <UniqueIdentifier>{71ef0ff3-3929-4834-bcfa-810de5dd0078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary\GameObject">
+      <UniqueIdentifier>{9632758e-01ef-4c7b-a5ef-c69c255736c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{c40c2330-242a-4d89-937c-dea49e42950c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{2dbf6020-302d-471c-8996-9482e24b56b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary\Mouse">
+      <UniqueIdentifier>{5be416a6-9158-405c-9d13-e8ee36f4b061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\BaseLibrary\Collision">
+      <UniqueIdentifier>{7f510f6d-a2ff-494e-a12f-ee6c2441f08d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{ed18d50d-fbe0-4146-a617-6596311b0a62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="resource.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode_Print.h">
+      <Filter>Nodes\BaseLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphManager.h">
+      <Filter>GraphManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode_Start.h">
+      <Filter>Nodes\BaseLibrary</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueprintUtilities\Include\ax\Builders.h">
+      <Filter>imgui\blueprints</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueprintUtilities\Include\ax\Drawing.h">
+      <Filter>imgui\blueprints</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueprintUtilities\Include\ax\Math2D.h">
+      <Filter>imgui\blueprints</Filter>
+    </ClInclude>
+    <ClInclude Include="BlueprintUtilities\Include\ax\Widgets.h">
+      <Filter>imgui\blueprints</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNodeBase.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeTypes.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode_MathAdd.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNodeRegistry.h">
+      <Filter>GraphManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNodeInstance.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNodePin.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphVariable.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="UID.h">
+      <Filter>GraphManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TimerManager.h">
+      <Filter>GraphManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>GraphManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode_MathMul.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphNode_MathSub.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_GetGameObjectPosition.h">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectManager.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_SetGameObjectPosition.h">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_SetGameObjectSprite.h">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_GetDistance.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_SetGameObjectScale.h">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_Max.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_GetMousePosition.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_Min.h">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="Graphnode_OnTriggerEnter.h">
+      <Filter>Nodes\BaseLibrary\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_OnTriggerExit.h">
+      <Filter>Nodes\BaseLibrary\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_Branch.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphnode_Timer.h">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode_Print.cpp">
+      <Filter>Nodes\BaseLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphManager.cpp">
+      <Filter>GraphManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode_Start.cpp">
+      <Filter>Nodes\BaseLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueprintUtilities\Source\ax\Builders.cpp">
+      <Filter>imgui\blueprints</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueprintUtilities\Source\ax\Drawing.cpp">
+      <Filter>imgui\blueprints</Filter>
+    </ClCompile>
+    <ClCompile Include="BlueprintUtilities\Source\ax\Widgets.cpp">
+      <Filter>imgui\blueprints</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNodeBase.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode_MathAdd.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNodeRegistry.cpp">
+      <Filter>GraphManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNodeInstance.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphVariable.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNodePin.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+    <ClCompile Include="TimerManager.cpp">
+      <Filter>GraphManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>GraphManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode_MathMul.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphNode_MathSub.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_GetGameObjectPosition.cpp">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectManager.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_SetGameObjectPosition.cpp">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_SetGameObjectSprite.cpp">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_GetDistance.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_SetGameObjectScale.cpp">
+      <Filter>Nodes\BaseLibrary\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_Max.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_GetMousePosition.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_Min.cpp">
+      <Filter>Nodes\BaseLibrary\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="Graphnode_OnTriggerEnter.cpp">
+      <Filter>Nodes\BaseLibrary\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_OnTriggerExit.cpp">
+      <Filter>Nodes\BaseLibrary\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_Branch.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphnode_Timer.cpp">
+      <Filter>Nodes\BaseLibrary\BaseType</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueprintUtilities\Include\ax\Math2D.inl">
+      <Filter>imgui\blueprints</Filter>
+    </None>
+  </ItemGroup>
+</Project>

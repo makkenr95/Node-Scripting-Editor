@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Retail|x64">
+      <Configuration>Retail</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9426BF5B-A0A8-48EB-9E45-DA9BBB4276F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\ThirdParty\imgui;D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\NodeEditor\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\ThirdParty\imgui;D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\NodeEditor\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">
+    <IncludePath>D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\ThirdParty\imgui;D:\Projects\synkat_mot_svn\tga_paket\tga2d_node_editor\Source\DX2DEngine\imgui_ne\NodeEditor\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;ImDrawIdx=unsigned int;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)DX2DEngine\;$(SolutionDir)Game\BlueprintUtilities\include\;$(SolutionDir)DX2DEngine\imgui_ne\ThirdParty\imgui;$(SolutionDir)DX2DEngine\imgui_ne\NodeEditor\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Lib\</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_RELEASE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)DX2DEngine\;$(SolutionDir)Game\BlueprintUtilities\include\;$(SolutionDir)DX2DEngine\imgui_ne\ThirdParty\imgui;$(SolutionDir)DX2DEngine\imgui_ne\NodeEditor\include\;$(SolutionDir)CommonUtilities\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Lib\</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_RETAIL;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)DX2DEngine\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Lib\</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="BlueprintUtilities\Include\ax\Builders.h" />
+    <ClInclude Include="BlueprintUtilities\Include\ax\Drawing.h" />
+    <ClInclude Include="BlueprintUtilities\Include\ax\Math2D.h" />
+    <ClInclude Include="BlueprintUtilities\Include\ax\Widgets.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GraphManager.h" />
+    <ClInclude Include="GraphNodeInstance.h" />
+    <ClInclude Include="GraphNodeBase.h" />
+    <ClInclude Include="GraphNodePin.h" />
+    <ClInclude Include="GraphNodeRegistry.h" />
+    <ClInclude Include="Graphnode_Branch.h" />
+    <ClInclude Include="Graphnode_GetDistance.h" />
+    <ClInclude Include="Graphnode_GetGameObjectPosition.h" />
+    <ClInclude Include="Graphnode_GetMousePosition.h" />
+    <ClInclude Include="GraphNode_MathAdd.h" />
+    <ClInclude Include="GraphNode_MathMul.h" />
+    <ClInclude Include="GraphNode_MathSub.h" />
+    <ClInclude Include="Graphnode_Max.h" />
+    <ClInclude Include="Graphnode_Min.h" />
+    <ClInclude Include="Graphnode_OnTriggerEnter.h" />
+    <ClInclude Include="Graphnode_OnTriggerExit.h" />
+    <ClInclude Include="GraphNode_Print.h" />
+    <ClInclude Include="Graphnode_SetGameObjectScale.h" />
+    <ClInclude Include="GraphNode_Start.h" />
+    <ClInclude Include="Graphnode_SetGameObjectPosition.h" />
+    <ClInclude Include="Graphnode_SetGameObjectSprite.h" />
+    <ClInclude Include="Graphnode_Timer.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="TimerManager.h" />
+    <ClInclude Include="UID.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="GraphVariable.h" />
+    <ClInclude Include="NodeTypes.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\DX2DEngine\imgui_ne\ThirdParty\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="BlueprintUtilities\Source\ax\Builders.cpp" />
+    <ClCompile Include="BlueprintUtilities\Source\ax\Drawing.cpp" />
+    <ClCompile Include="BlueprintUtilities\Source\ax\Widgets.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GraphManager.cpp" />
+    <ClCompile Include="GraphNodeInstance.cpp" />
+    <ClCompile Include="GraphNodeBase.cpp" />
+    <ClCompile Include="GraphNodePin.cpp" />
+    <ClCompile Include="GraphNodeRegistry.cpp" />
+    <ClCompile Include="Graphnode_Branch.cpp" />
+    <ClCompile Include="Graphnode_GetDistance.cpp" />
+    <ClCompile Include="Graphnode_GetGameObjectPosition.cpp" />
+    <ClCompile Include="Graphnode_GetMousePosition.cpp" />
+    <ClCompile Include="GraphNode_MathAdd.cpp" />
+    <ClCompile Include="GraphNode_MathMul.cpp" />
+    <ClCompile Include="GraphNode_MathSub.cpp" />
+    <ClCompile Include="Graphnode_Max.cpp" />
+    <ClCompile Include="Graphnode_Min.cpp" />
+    <ClCompile Include="Graphnode_OnTriggerEnter.cpp" />
+    <ClCompile Include="Graphnode_OnTriggerExit.cpp" />
+    <ClCompile Include="GraphNode_Print.cpp" />
+    <ClCompile Include="Graphnode_SetGameObjectScale.cpp" />
+    <ClCompile Include="GraphNode_Start.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="Graphnode_Timer.cpp" />
+    <ClCompile Include="GraphVariable.cpp" />
+    <ClCompile Include="Graphnode_SetGameObjectPosition.cpp" />
+    <ClCompile Include="Graphnode_SetGameObjectSprite.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Retail|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="TimerManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlueprintUtilities\Include\ax\Math2D.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
